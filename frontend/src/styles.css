@@ -1,0 +1,186 @@
+:root {
+  color: #172033;
+  background: #f3f0e8;
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+button,
+input {
+  font: inherit;
+}
+
+button {
+  border: 0;
+  border-radius: 999px;
+  background: #172033;
+  color: white;
+  cursor: pointer;
+  font-weight: 700;
+  padding: 0.85rem 1.15rem;
+}
+
+button:disabled {
+  cursor: not-allowed;
+  opacity: 0.45;
+}
+
+.app-shell {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 1.25rem;
+}
+
+.dashboard {
+  background: rgba(255, 255, 255, 0.78);
+  border: 1px solid rgba(23, 32, 51, 0.12);
+  border-radius: 32px;
+  box-shadow: 0 24px 80px rgba(23, 32, 51, 0.16);
+  max-width: 560px;
+  padding: 2rem;
+  text-align: center;
+  width: 100%;
+}
+
+.eyebrow {
+  color: #cb6c46;
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.2em;
+  margin: 0 0 0.4rem;
+}
+
+h1 {
+  font-size: clamp(2rem, 8vw, 3.5rem);
+  line-height: 0.95;
+  margin: 0 0 1.5rem;
+}
+
+.mode-toggle,
+.actions,
+.task-form,
+.stats {
+  display: flex;
+  gap: 0.75rem;
+}
+
+.mode-toggle {
+  background: #e6dfd1;
+  border-radius: 999px;
+  margin: 0 auto 1.25rem;
+  padding: 0.35rem;
+  width: fit-content;
+}
+
+.mode-toggle button {
+  background: transparent;
+  color: #172033;
+  padding-inline: 1.25rem;
+}
+
+.mode-toggle button.active {
+  background: #ffffff;
+  box-shadow: 0 8px 22px rgba(23, 32, 51, 0.12);
+}
+
+.timer-card {
+  background: #172033;
+  border-radius: 28px;
+  color: white;
+  padding: 2rem;
+}
+
+.mode-label {
+  color: #f0c772;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.time {
+  font-size: clamp(4rem, 18vw, 7rem);
+  font-weight: 900;
+  letter-spacing: -0.08em;
+  line-height: 1;
+  margin: 1rem 0 1.5rem;
+}
+
+.actions {
+  justify-content: center;
+}
+
+.actions button {
+  background: white;
+  color: #172033;
+}
+
+.task-form {
+  margin-top: 1.25rem;
+}
+
+.task-form input {
+  border: 1px solid rgba(23, 32, 51, 0.16);
+  border-radius: 999px;
+  flex: 1;
+  min-width: 0;
+  padding: 0.85rem 1rem;
+}
+
+.active-task,
+.stats div {
+  background: #fffaf0;
+  border-radius: 20px;
+  margin-top: 1rem;
+  padding: 1rem;
+}
+
+.active-task span,
+.stats span {
+  color: #687084;
+  display: block;
+  font-size: 0.8rem;
+  font-weight: 700;
+  margin-bottom: 0.25rem;
+  text-transform: uppercase;
+}
+
+.active-task strong,
+.stats strong {
+  font-size: 1.2rem;
+}
+
+.message {
+  color: #cb6c46;
+  font-weight: 700;
+  margin: 1rem 0 0;
+}
+
+.stats div {
+  flex: 1;
+  margin-top: 0;
+}
+
+.stats {
+  margin-top: 1rem;
+}
+
+@media (max-width: 560px) {
+  .dashboard {
+    border-radius: 24px;
+    padding: 1.25rem;
+  }
+
+  .actions,
+  .task-form,
+  .stats {
+    flex-direction: column;
+  }
+}

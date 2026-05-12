@@ -1,4 +1,4 @@
-# ⏱️ YPT — Your Productivity Timer
+# ⏱️ Sankalp !!
 
 <p align="center">
   <img src="https://img.shields.io/badge/Status-Under%20Development-blue?style=for-the-badge" />
@@ -280,26 +280,6 @@ npm run dev
 
 ---
 
-# 🌍 Environment Variables
-
-## Backend `.env`
-
-```env
-APP_NAME=YPT
-
-DB_CONNECTION=pgsql
-DB_HOST=127.0.0.1
-DB_PORT=5432
-DB_DATABASE=ypt
-DB_USERNAME=postgres
-DB_PASSWORD=password
-
-REDIS_HOST=127.0.0.1
-REDIS_PORT=6379
-```
-
----
-
 # 📈 Vision
 
 YPT aims to become:
@@ -321,11 +301,6 @@ Fork → Clone → Create Branch → Commit → Push → PR
 
 ---
 
-# 📜 License
-
-MIT License
-
----
 
 # 👨‍💻 Author
 
